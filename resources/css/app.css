@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --blue: #0d6efd; /* Azul */
+    --dark-blue: #2980b9; /* Azul Escuro */
+    --gray: #95a5a6; /* Cinza */
+    --white: #ffff; /* Branco */
+    --dark-gray: #232f40; /* Cinza Escuro */
+    --neutral-gray: #cbd2d9; /* Roxo */
+    --yellow: #f1c40f; /* Amarelo */
+    --dark-blue-gray: #34495e; /* Azul Escuro Acinzentado */
+    --teal: #16a085; /* Verde Água */
+    --dark-orange: #e67e22; /* Laranja Escuro */
+}
+
+/* Blue */
+.bg-blue {
+    background-color: var(--blue);
+}
+.text-blue {
+    color: var(--blue);
+}
+.border-blue {
+    border-color: var(--blue);
+}
+
+/* Dark Blue */
+.bg-dark-blue {
+    background-color: var(--dark-blue);
+}
+.text-dark-blue {
+    color: var(--dark-blue);
+}
+.border-dark-blue {
+    border-color: var(--dark-blue);
+}
+
+/* Gray */
+.bg-gray {
+    background-color: var(--gray);
+}
+.text-gray {
+    color: var(--gray);
+}
+.border-gray {
+    border-color: var(--gray);
+}
+
+/* White */
+.bg-custom-white {
+    background-color: var(--white);
+}
+.text-custom-white {
+    color: var(--white);
+}
+.border-custom-white {
+    border-color: var(--white);
+}
+
+/* Dark Gray */
+.bg-dark-gray {
+    background-color: var(--dark-gray);
+}
+.text-dark-gray {
+    color: var(--dark-gray);
+}
+.border-dark-gray {
+    border-color: var(--dark-gray);
+}
+
+/* neutral-gray */
+.bg-neutral-gray {
+    background-color: var(--neutral-gray);
+}
+.text-neutral-gray {
+    color: var(--neutral-gray);
+}
+.border-neutral-gray {
+    border-color: var(--neutral-gray);
+}
+
+/* Yellow */
+.bg-yellow {
+    background-color: var(--yellow);
+}
+.text-yellow {
+    color: var(--yellow);
+}
+.border-yellow {
+    border-color: var(--yellow);
+}
+
+/* Dark Blue Gray */
+.bg-dark-blue-gray {
+    background-color: var(--dark-blue-gray);
+}
+.text-dark-blue-gray {
+    color: var(--dark-blue-gray);
+}
+.border-dark-blue-gray {
+    border-color: var(--dark-blue-gray);
+}
+
+/* Teal */
+.bg-teal {
+    background-color: var(--teal);
+}
+.text-teal {
+    color: var(--teal);
+}
+.border-teal {
+    border-color: var(--teal);
+}
+
+/* Dark Orange */
+.bg-dark-orange {
+    background-color: var(--dark-orange);
+}
+.text-dark-orange {
+    color: var(--dark-orange);
+}
+.border-dark-orange {
+    border-color: var(--dark-orange);
+}
