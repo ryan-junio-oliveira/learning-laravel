@@ -1,5 +1,5 @@
 <nav id="sidebar"
-    class="w-64 h-full max-h-screen top-32 md:top-16 bg-dark-gray text-custom-white z-40 transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out absolute overflow-y-auto">
+    class="w-64 h-full max-h-screen top-32 md:top-16 bg-dark-gray text-custom-white z-40 transform -translate-x-full md:translate-x-0 transition-transform duration-300 ease-in-out fixed overflow-y-auto">
     <div class="flex justify-end p-4">
         <!-- Close button (X) -->
         <button id="close-sidebar" class="md:hidden flex text-custom-white hover:text-gray">

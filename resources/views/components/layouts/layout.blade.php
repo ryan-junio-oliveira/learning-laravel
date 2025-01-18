@@ -16,23 +16,24 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="bg-custom-white overflow-hidden">
+<body class="bg-neutral-gray overflow-auto">
 
     @include('components.layouts.navbar')
     @include('components.layouts.sidebar')
 
-    <main class="h-full max-h-screen top-32 md:top-16 absolute translate-x-0 md:ml-64 ml-0 transition-transform duration-300 ease-in-out w-full md:w-[calc(100%-16rem)] flex flex-col bg-neutral-gray overflow-y-auto mb-5">
+    <main
+        class="h-full top-32 md:top-16 translate-x-0 md:ml-64 ml-0 transition-transform duration-300 ease-in-out w-full md:w-[calc(100%-16rem)] flex flex-col bg-neutral-gray">
 
-        <header class="sticky top-0 z-10">
+        <header class="mt-32 md:mt-16 m-auto gap-6 flex flex-col z-10 w-full">
             {{ $header ?? '' }}
         </header>
 
-        <div class="container mt-24 md:mt-12 m-auto gap-6 flex flex-col">
+        <div class="container mt-12 mb-12 m-auto gap-6 flex flex-col p-4">
             {{ $main }}
         </div>
     </main>
 
-    <footer class="bg-neutral-gray bottom-0 z-30 absolute md:ml-64 ml-0 text-end w-full md:w-[calc(100%-16rem)]">
+    <footer class="bg-neutral-gray bottom-0 z-30 md:ml-64 ml-0 text-end w-full md:w-[calc(100%-16rem)] fixed">
         <p class="mr-4">&copy; {{ date('Y') }} - {{ env('APP_NAME') }}</p>
     </footer>
 </body>

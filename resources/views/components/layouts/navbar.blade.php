@@ -1,10 +1,11 @@
-<nav class="bg-white border-gray-200 w-full h-32 md:h-16 z-40">
+<nav class="bg-white border-gray-200 w-full h-32 md:h-16 z-40 fixed">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 gap-6">
 
         <div class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
 
-            <span class="hidden md:flex self-center text-2xl font-semibold whitespace-nowrap dark:text-white">{{env('APP_NAME')}}</span>
+            <span
+                class="hidden md:flex self-center text-2xl font-semibold whitespace-nowrap dark:text-white">{{ env('APP_NAME') }}</span>
 
             <button data-collapse-toggle="navbar-default" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
@@ -35,6 +36,11 @@
                     placeholder="Search...">
             </div>
 
+            <div class="px-4 py-3 hidden md:flex gap-2">
+                <span class="block text-sm text-gray-900">Bonnie Green</span>
+                <span class="block text-sm text-gray-500 truncate">name@flowbite.com</span>
+            </div>
+
             <!-- User Menu Button -->
             <button type="button"
                 class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300"
@@ -47,19 +53,13 @@
             <!-- Dropdown menu -->
             <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow"
                 id="user-dropdown">
-                <div class="px-4 py-3">
+                <div class="px-4 py-3 block md:hidden">
                     <span class="block text-sm text-gray-900">Bonnie Green</span>
                     <span class="block text-sm text-gray-500 truncate">name@flowbite.com</span>
                 </div>
                 <ul class="py-2" aria-labelledby="user-menu-button">
                     <li>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Dashboard</a>
-                    </li>
-                    <li>
                         <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Settings</a>
-                    </li>
-                    <li>
-                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Earnings</a>
                     </li>
                     <li>
                         <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Sign out</a>
