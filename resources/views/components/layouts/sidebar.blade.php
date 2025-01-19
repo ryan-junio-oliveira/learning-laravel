@@ -41,6 +41,13 @@
                         <span class="menu-text">Fichas</span>
                     </a>
                 </li>
+
+                <li class="hover:bg-gray-700 rounded-md">
+                    <a href="{{route('users.index')}}" class="flex items-center space-x-3 p-3 text-sm">
+                        <i class="fa fa-user text-lg"></i>
+                        <span class="menu-text">Usuários</span>
+                    </a>
+                </li>
             </ul>
         </div>
 

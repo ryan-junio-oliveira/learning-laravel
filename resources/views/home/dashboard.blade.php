@@ -1,7 +1,9 @@
 <x-layout title="{{ env('APP_NAME') }}">
     <x-slot name="header">
-        <x-header :title="'Bem vindo de volta, Ryan Oliveira'">
-            {{-- qualquer outro conteudo pode ser passado aqui --}}
+        <x-header>
+            <h1 class="text-start font-semibold text-dark-gray p-4 rounded-lg">
+                Bem-vindo de volta, <span class="font-bold text-blue">{{ Auth::user()->name }}</span>! 🌟
+            </h1>
         </x-header>
     </x-slot>
 

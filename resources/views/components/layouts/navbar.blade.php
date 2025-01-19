@@ -5,7 +5,7 @@
             <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
 
             <span
-                class="hidden md:flex self-center text-2xl font-semibold whitespace-nowrap dark:text-white">{{ env('APP_NAME') }}</span>
+                class="hidden text-dark-gray md:flex self-center text-2xl font-semibold whitespace-nowrap">{{ env('APP_NAME') }}</span>
 
             <button data-collapse-toggle="navbar-default" type="button"
                 class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
@@ -37,8 +37,8 @@
             </div>
 
             <div class="px-4 py-3 hidden md:flex gap-2">
-                <span class="block text-sm text-gray-900">Bonnie Green</span>
-                <span class="block text-sm text-gray-500 truncate">name@flowbite.com</span>
+                <span class="block text-sm text-gray-900">{{Auth::user()->name}}</span>
+                <span class="block text-sm text-gray-500 truncate">{{Auth::user()->email}}</span>
             </div>
 
             <!-- User Menu Button -->

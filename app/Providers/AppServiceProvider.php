@@ -3,24 +3,19 @@
 namespace App\Providers;
 
 use Illuminate\Support\Facades\Blade;
-use App\View\Components\layouts\Header;
-use App\View\Components\layouts\Layout;
-use App\View\Components\layouts\Navbar;
 use Illuminate\Support\ServiceProvider;
-use App\View\Components\layouts\Sidebar;
 
 class AppServiceProvider extends ServiceProvider
 {
-    public function register(): void
-    {
-
-    }
+    public function register(): void {}
 
     public function boot(): void
     {
-        Blade::component('layout', Layout::class);
-        Blade::component('sidebar', Sidebar::class);
-        Blade::component('sidebar', Navbar::class);
-        Blade::component('header', Header::class);
+        Blade::component('components.layouts.layout', 'layout');
+        Blade::component('components.layouts.sidebar', 'sidebar');
+        Blade::component('components.layouts.navbar', 'navbar');
+        Blade::component('components.layouts.header', 'header');
+        Blade::component('components.consumers.table-consumers', 'table-consumers');
+        Blade::component('components.users.table-users', 'table-users');
     }
 }
