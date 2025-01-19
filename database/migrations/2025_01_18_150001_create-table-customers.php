@@ -13,8 +13,8 @@ return new class extends Migration
                 $table->id();
                 $table->string('name', 255);
                 $table->string('email', 255)->unique();
-                $table->string('cpf_or_cnpj', 14)->unique(); // CPF tem 11 dígitos, CNPJ tem 14, sem formatação.
-                $table->string('phone_number', 13)->unique();
+                $table->string('cpf_or_cnpj', 14)->unique();
+                $table->string('phone_number', 20)->unique();
                 $table->string('address_street')->nullable();
                 $table->string('street', 255);
                 $table->string('neighborhood', 255);
